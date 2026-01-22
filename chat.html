@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discuss Your Requirement | CogniSol | CFMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0f172a;
+      --accent: #2563eb;
+      --muted: #64748b;
+      --light: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+    body { background: #ffffff; color: var(--secondary); line-height: 1.6; }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HEADER */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 15px 0;
+    }
+
+    .header-flex { display: flex; justify-content: space-between; align-items: center; }
+
+    .logo { font-size: 22px; font-weight: bold; color: var(--primary); }
+
+    nav a {
+      margin-left: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    /* HERO VIDEO (MATCHING INDEX STYLE) */
+    .hero {
+      position: relative;
+      height: 65vh;
+      min-height: 420px;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: 1;
+    }
+
+    .hero h1 { font-size: 38px; margin-bottom: 10px; }
+
+    .hero p {
+      max-width: 780px;
+      margin: auto;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    section { padding: 70px 0; }
+
+    section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    section p.section-desc {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 50px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      background: var(--light);
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      padding: 35px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: var(--secondary);
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #475569;
+      margin-bottom: 10px;
+    }
+
+    label { display: block; margin-top: 14px; font-size: 14px; }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #cbd5f5;
+      font-size: 14px;
+    }
+
+    textarea { min-height: 120px; }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #1e40af; }
+
+    .chat-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .chat-box h4 { margin-bottom: 8px; font-size: 18px; }
+
+    .cta {
+      background: #f1f5f9;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 30px 0;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer h4 { color: white; margin-bottom: 10px; }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-flex">
+    <div class="logo">⚙ CogniSol | CFMS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO VIDEO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="chat.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <h1>Discuss Your Requirement</h1>
+    <p>
+      Connect with our team to discuss your business needs,
+      consulting requirements, and project ideas.
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section>
+  <div class="container">
+    <h2>Start the Conversation</h2>
+    <p class="section-desc">
+      Share your requirement and connect with our backoffice
+      and consulting team for guided support.
+    </p>
+
+    <div class="grid">
+
+      <!-- FORM CARD -->
+      <div class="card">
+        <h3>Tell Us About Your Requirement</h3>
+
+        <form>
+          <label>Full Name</label>
+          <input type="text" required>
+
+          <label>Company / Organization</label>
+          <input type="text">
+
+          <label>Email Address</label>
+          <input type="email" required>
+
+          <label>Phone / WhatsApp Number</label>
+          <input type="text">
+
+          <label>Area of Interest</label>
+          <select>
+            <option>Finance Consulting</option>
+            <option>Management Consulting</option>
+            <option>Custom Software</option>
+            <option>Automation</option>
+            <option>Data Analytics</option>
+            <option>Solar EPC</option>
+            <option>Energy Consultancy</option>
+            <option>Compliance Systems</option>
+            <option>Other</option>
+          </select>
+
+          <label>Describe Your Requirement</label>
+          <textarea placeholder="Briefly describe your business challenge or project..."></textarea>
+
+          <button type="submit" class="btn">Submit Requirement</button>
+        </form>
+      </div>
+
+      <!-- CHAT OPTIONS CARD -->
+      <div class="card">
+        <h3>Chat With Our Backoffice Team</h3>
+        <p>
+          For quick coordination and clarifications, connect
+          directly with our backoffice and support team.
+        </p>
+
+        <div class="chat-box" style="margin-top:20px;">
+          <h4>WhatsApp Chat (Recommended)</h4>
+          <p>Instant connection with our coordination team.</p>
+          <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="chat-box" style="margin-top:20px;">
+          <h4>Live Website Chat</h4>
+          <p>
+            Real-time website chat using tools like
+            Tawk.to, Zoho SalesIQ, Crisp, or LiveChat.
+          </p>
+          <p style="font-size:13px;color:#64748b;">
+            Backoffice staff can reply from desktop or mobile.
+          </p>
+        </div>
+
+        <div class="chat-box" style="margin-top:20px;">
+          <h4>Schedule a Call</h4>
+          <p>Request a callback from our consulting team.</p>
+          <a href="consultation.html" class="btn">Request Callback</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>We’re Ready to Assist</h2>
+    <p>
+      Our team is available to guide you through consulting,
+      technology, and energy solutions tailored to your needs.
+    </p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>CogniSol | CFMS</h4>
+      <p>Finance, management & software consulting.</p>
+    </div>
+    <div>
+      <h4>Location</h4>
+      <p>Raipur, Chhattisgarh, India</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: cognisol.cfms@gmail.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 CogniSol | CFMS. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

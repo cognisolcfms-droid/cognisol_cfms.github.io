@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Request Free Consultation | CogniSol | CFMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0f172a;
+      --accent: #2563eb;
+      --muted: #64748b;
+      --light: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+    body { background: #ffffff; color: var(--secondary); line-height: 1.6; }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; position: relative; z-index: 2; }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 15px 0;
+    }
+
+    .header-flex { display: flex; justify-content: space-between; align-items: center; }
+
+    .logo { font-size: 22px; font-weight: bold; color: var(--primary); }
+
+    nav a { margin-left: 20px; font-size: 14px; color: var(--muted); }
+
+    nav a:hover { color: var(--primary); }
+
+    /* HERO VIDEO */
+    .hero {
+      position: relative;
+      height: 65vh;
+      min-height: 420px;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: 1;
+    }
+
+    .hero h1 { font-size: 38px; margin-bottom: 10px; }
+
+    .hero p { max-width: 760px; margin: auto; font-size: 18px; opacity: 0.95; }
+
+    section { padding: 70px 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .info-box {
+      background: var(--light);
+      padding: 35px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .info-box h2 { margin-bottom: 15px; color: var(--primary); }
+
+    .info-box ul { padding-left: 20px; }
+
+    .info-box li { margin-bottom: 10px; font-size: 15px; }
+
+    .form-box {
+      border: 1px solid #e5e7eb;
+      padding: 35px;
+      border-radius: 14px;
+    }
+
+    .form-box h2 { margin-bottom: 20px; color: var(--primary); }
+
+    form label { display: block; font-size: 14px; margin: 15px 0 6px; }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #cbd5f5;
+      font-size: 14px;
+    }
+
+    form textarea { min-height: 120px; resize: vertical; }
+
+    .btn {
+      margin-top: 25px;
+      background: var(--primary);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #1e40af; }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 30px 0;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer h4 { color: white; margin-bottom: 10px; }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-flex">
+    <div class="logo">⚙ CogniSol | CFMS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="consultation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+    <h1>Request a Free Consultation</h1>
+    <p>
+      Get expert guidance on custom software, automation,
+      analytics, and intelligent systems — no obligation.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid">
+
+    <div class="info-box">
+      <h2>What This Consultation Includes</h2>
+      <ul>
+        <li>Business process understanding</li>
+        <li>Automation & software opportunities</li>
+        <li>High-level solution approach</li>
+        <li>Technology recommendations</li>
+        <li>Clear next steps</li>
+      </ul>
+      <p style="margin-top:15px;font-size:14px;color:#475569;">
+        Advisory discussion focused on your business goals.
+      </p>
+    </div>
+
+    <div class="form-box">
+      <h2>Tell Us About Your Requirement</h2>
+      <form method="post" action="#">
+        <label>Full Name *</label>
+        <input type="text" required>
+
+        <label>Email Address *</label>
+        <input type="email" required>
+
+        <label>Phone Number *</label>
+        <input type="tel" required>
+
+        <label>Organization / Business Name</label>
+        <input type="text">
+
+        <label>Type of Requirement</label>
+        <select>
+          <option>Custom Software</option>
+          <option>Business Automation</option>
+          <option>Data Analytics</option>
+          <option>IoT Solutions</option>
+          <option>Machine Learning</option>
+          <option>Compliance Software</option>
+          <option>Not Sure / Need Guidance</option>
+        </select>
+
+        <label>Brief Description *</label>
+        <textarea required placeholder="Describe your business problem or idea..."></textarea>
+
+        <button type="submit" class="btn">Request Consultation</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>CogniSol | CFMS</h4>
+      <p>Custom software, automation & intelligent systems.</p>
+    </div>
+    <div>
+      <h4>Location</h4>
+      <p>Raipur, Chhattisgarh, India</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: cognisol.cfms@gmail.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 CogniSol | CFMS. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

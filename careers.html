@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Careers | CogniSol | CFMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0f172a;
+      --accent: #2563eb;
+      --muted: #64748b;
+      --light: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+    body { background: #ffffff; color: var(--secondary); line-height: 1.6; }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; position: relative; z-index: 2; }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 15px 0;
+    }
+
+    .header-flex { display: flex; justify-content: space-between; align-items: center; }
+
+    .logo { font-size: 22px; font-weight: bold; color: var(--primary); }
+
+    nav a { margin-left: 20px; font-size: 14px; color: var(--muted); }
+
+    nav a:hover { color: var(--primary); }
+
+    /* HERO VIDEO */
+    .hero {
+      position: relative;
+      height: 65vh;
+      min-height: 420px;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: 1;
+    }
+
+    .hero h1 { font-size: 38px; margin-bottom: 10px; }
+
+    .hero p { max-width: 780px; margin: auto; font-size: 18px; opacity: 0.95; }
+
+    section { padding: 70px 0; }
+
+    section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    section p.section-desc {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 50px;
+      color: var(--muted);
+    }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; }
+
+    .card {
+      background: var(--light);
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      padding: 35px;
+    }
+
+    .card h3 { margin-bottom: 12px; font-size: 20px; }
+
+    .card p { font-size: 15px; color: #475569; margin-bottom: 10px; }
+
+    .card ul { padding-left: 18px; margin-top: 10px; }
+
+    .card li { font-size: 14px; margin-bottom: 6px; }
+
+    .badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: var(--primary);
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-right: 6px;
+    }
+
+    .badge.remote { background: #ecfeff; color: #0e7490; }
+    .badge.intern { background: #f0fdf4; color: #166534; }
+    .badge.women { background: #fdf2f8; color: #9d174d; }
+    .badge.open { background: #dcfce7; color: #166534; }
+    .badge.soon { background: #fff7ed; color: #9a3412; }
+
+    .cta {
+      background: #f1f5f9;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    .btn:hover { background: #1e40af; }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 30px 0;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer h4 { color: white; margin-bottom: 10px; }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-flex">
+    <div class="logo">⚙ CogniSol | CFMS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="careers.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <h1>Careers at CogniSol | CFMS</h1>
+    <p>
+      Build your career in finance, management, and technology consulting —
+      with real-world impact, continuous learning, and inclusive growth.
+    </p>
+  </div>
+</section>
+
+<!-- TRAINING SECTION -->
+<section>
+  <div class="container">
+    <h2>Training & Skill Development</h2>
+    <p class="section-desc">
+      We believe in developing talent through structured learning,
+      mentorship, and hands-on project exposure.
+    </p>
+
+    <div class="grid">
+      <div class="card"><h3>On-the-Job Training</h3><p>Practical exposure to real client projects.</p></div>
+      <div class="card"><h3>Mentorship Program</h3><p>Direct guidance from experienced consultants.</p></div>
+      <div class="card"><h3>Women-Focused Skill Enablement</h3><p>Special learning pathways for women professionals.</p><span class="badge women">Women Empowerment</span></div>
+      <div class="card"><h3>Internships & Freshers</h3><p>Structured programs to build industry-ready skills.</p><span class="badge intern">Internships</span></div>
+      <div class="card"><h3>Technical Training</h3><p>Modern software, analytics, automation & cloud basics.</p></div>
+      <div class="card"><h3>Professional & Leadership Development</h3><p>Consulting, communication & leadership readiness.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOB OPENINGS -->
+<section>
+  <div class="container">
+    <h2>Current Openings</h2>
+    <p class="section-desc">Open and upcoming career opportunities.</p>
+
+    <div class="grid">
+
+      <!-- OPEN ROLE -->
+      <div class="card">
+        <h3>Liaisoning Trainee Manager</h3>
+        <p>Coordination between solar vendors, government authorities, and internal compliance.</p>
+        <ul>
+          <li>Government liaison (CREDA, DISCOMs)</li>
+          <li>Vendor compliance tracking</li>
+          <li>Field visits & stakeholder communication</li>
+          <li>Project documentation & CFMS updates</li>
+        </ul>
+        <span class="badge women">Women Candidates Encouraged</span>
+        <span class="badge remote">Hybrid / Field Role</span>
+        <span class="badge open">Status: Open</span>
+        <div style="margin-top:15px;">
+          <a href="ltm.html" class="btn" style="font-size:13px;">View Job & Apply</a>
+        </div>
+      </div>
+
+      <!-- COMING SOON ROLES -->
+      <div class="card">
+        <h3>Software Developer</h3>
+        <p>Custom business applications and automation systems.</p>
+        <ul><li>Web & application development</li><li>API integration</li></ul>
+        <span class="badge remote">Hybrid / Remote</span>
+        <span class="badge soon">Status: Coming Soon</span>
+      </div>
+
+      <div class="card">
+        <h3>Data Analyst / BI Developer</h3>
+        <p>Dashboards and analytics systems.</p>
+        <ul><li>Data visualization</li><li>Reporting automation</li></ul>
+        <span class="badge remote">Hybrid / Remote</span>
+        <span class="badge soon">Status: Coming Soon</span>
+      </div>
+
+      <div class="card">
+        <h3>Business & Process Analyst</h3>
+        <p>Process analysis and automation support.</p>
+        <ul><li>Process mapping</li><li>Requirement analysis</li></ul>
+        <span class="badge soon">Status: Coming Soon</span>
+      </div>
+
+      <div class="card">
+        <h3>Finance & MIS Associate</h3>
+        <p>Financial systems and MIS reporting.</p>
+        <ul><li>MIS reporting</li><li>Financial analysis</li></ul>
+        <span class="badge women">Women Candidates Encouraged</span>
+        <span class="badge soon">Status: Coming Soon</span>
+      </div>
+
+      <div class="card">
+        <h3>Intern – Software / Analytics</h3>
+        <p>Hands-on experience in software and data projects.</p>
+        <ul><li>Project work</li><li>Mentored learning</li></ul>
+        <span class="badge intern">Internship</span>
+        <span class="badge soon">Status: Coming Soon</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Apply or Express Interest</h2>
+    <p>Send your resume to <strong>cognisol.cfms@gmail.com</strong></p>
+    <a href="contact.html" class="btn">Contact HR</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h4>CogniSol | CFMS</h4><p>Finance, management & software consulting.</p></div>
+    <div><h4>Location</h4><p>Raipur, Chhattisgarh, India</p></div>
+    <div><h4>Careers</h4><p>Email: cognisol.cfms@gmail.com</p></div>
+  </div>
+  <div class="copyright">© 2026 CogniSol | CFMS. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
